@@ -1,0 +1,89 @@
+\documentclass{article}
+
+\usepackage{style/akmassey}
+
+\begin{document}
+
+\begin{center}
+  \textbf{Mutt Cheatsheet}
+\end{center}
+
+\footnotesize This document describes some of the most common commands I use
+to manage my email with Mutt.  It is intended to be a living document, and I
+update it periodically based on what I find myself using most.  What works for
+me may not work for you.
+
+% TODO: Consider whether you want to add additional commands from this:
+% http://media.commandline.org.uk/code/mutt.pdf
+
+\begin{table*}[!b]
+% increase table row spacing, adjust to taste
+\renewcommand{\arraystretch}{1.3}
+\caption{General Commands}
+\label{tab:general}
+\footnotesize
+\begin{tabulary}{\textwidth}{CL}
+  \textbf{Standard} & \textbf{Description}\\
+  ctrl-q & cancel current action\\
+  ? & list all keybindings for the current menu\\
+\end{tabulary}
+\end{table*}
+
+
+\begin{table*}[!b]
+% increase table row spacing, adjust to taste
+\renewcommand{\arraystretch}{1.3}
+\caption{Message Index Commands}
+\label{tab:message_index}
+\footnotesize
+\begin{tabulary}{\textwidth}{CCL}
+  \textbf{Standard} & \textbf{Alternate} & \textbf{Description}\\
+  m & & compose a new message\\
+  d & D & delete the current message (delete matching a pattern)\\
+  u & U & undelete the current message (undelete matching a pattern)\\
+  r & R & reply to sender (reply to all)\\
+  L & & reply to mailing list\\
+  f & b & forward message (bounce message)\\
+  F & & flag message as important\\
+  v & & view attachments\\
+  gg & G & move to first entry (move to last entry)\\
+  return & & display message\\
+  space & & collapse thread\\
+  tab & & sync mailbox\\
+  O & o & sync all mail (sync only inbox)\\
+  C & M & copy message to a mailbox (move message to a mailbox)\\
+\end{tabulary}
+\end{table*}
+
+\begin{table*}[!b]
+% increase table row spacing, adjust to taste
+\renewcommand{\arraystretch}{1.3}
+\caption{Search Commands}
+\label{tab:search}
+\footnotesize
+\begin{tabulary}{\textwidth}{CCL}
+  \textbf{Standard} & \textbf{Alternate} & \textbf{Description}\\
+  l & & limit messages shown in the index to those matching a pattern\\
+  a & & show all messages by removing all limits\\
+  / & & search for messages matching a pattern\\
+  n & N & move to the next match based on the search (move to the previous match)\\
+  S & & perform a full text search and show results in a temporary folder\\
+\end{tabulary}
+\end{table*}
+
+
+\begin{table*}[!b]
+% increase table row spacing, adjust to taste
+\renewcommand{\arraystretch}{1.3}
+\caption{Pager Commands}
+\label{tab:pager}
+\footnotesize
+\begin{tabulary}{\textwidth}{CCL}
+  \textbf{Standard} & \textbf{Alternate} & \textbf{Description}\\
+  k & j & move to previous line (move to next line)\\
+  gg & G & move to first line (move to last line)\\
+  ctrl-u & & call urlview to open links\\
+\end{tabulary}
+\end{table*}
+
+\end{document}
