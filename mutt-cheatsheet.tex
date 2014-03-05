@@ -71,6 +71,65 @@ me may not work for you.
 \end{tabulary}
 \end{table*}
 
+\begin{table*}[!b]
+% increase table row spacing, adjust to taste
+\renewcommand{\arraystretch}{1.3}
+\caption{Search Patterns}
+\label{tab:patterns}
+\footnotesize
+\begin{tabulary}{\textwidth}{LLL}
+  \textbf{Pattern} & \textbf{Alternate} & \textbf{Description}\\
+  new & \textasciitilde{}N & new messages\\
+  flagged & \textasciitilde{}F & flagged messages\\
+  all & \textasciitilde{}A & all messages\\
+  old & \textasciitilde{}O & old messages\\
+  \textasciitilde{}p & & messages addressed directly to you (e.g.\ not in a mailing list)\\
+  \textasciitilde{}b WORD & & messages with WORD in their body text\\
+  \textasciitilde{}B WORD & & messages which contain WORD in the whole message\\
+  \textasciitilde{}c USER & & messages carbon-copied to USER\\
+  \textasciitilde{}d MIN-MAX & & messages in a Date range\\
+  \textasciitilde{}f USER & & messages originating from USER\\
+  \textasciitilde{}s SUBJECT & & messages having SUBJECT in the ``Subject'' field.\\
+  \textasciitilde{}t USER & & messages addressed to USER\\
+  replied & & messages which have been replied to\\
+  tagged & & tagged messages\\
+  read & & read messages\\
+  unread & & unread messages\\
+  M-N & & messages in the range ``M'' through ``N''\\
+  \textasciitilde{}c USER & & messages carbon-copied to USER\\
+  \textasciitilde{}C EXPR & & message is either to: or cc: EXPR\\
+  \textasciitilde{}D & & deleted messages\\
+  \textasciitilde{}d [MIN]-[MAX] & & messages with ``date-sent'' in a Date range\\
+  \textasciitilde{}E & & expired messages\\
+  \textasciitilde{}e EXPR & & message which contains EXPR in the ``Sender'' field\\
+  \textasciitilde{}f USER & & messages originating from USER\\
+  \textasciitilde{}g & & PGP signed messages\\
+  \textasciitilde{}G & & PGP encrypted messages\\
+  \textasciitilde{}h EXPR & & messages which contain EXPR in the message header\\
+  \textasciitilde{}k & & message contains PGP key material\\
+  \textasciitilde{}i ID & & message which match ID in the ``Message-ID''
+  field\\
+  \textasciitilde{}L EXPR & & message is either originated or received by EXPR\\
+  \textasciitilde{}l & & message is addressed to a known mailing list\\
+  \textasciitilde{}m [MIN]-[MAX] & & message in the range MIN to MAX *)\\
+  \textasciitilde{}n [MIN]-[MAX] & & messages with a score in the range MIN to MAX *)\\
+  \textasciitilde{}p & & message is addressed to you (consults \$alternates)\\
+  \textasciitilde{}P & & message is from you (consults \$alternates)\\
+  \textasciitilde{}Q & & messages which have been replied to\\
+  \textasciitilde{}R & & read messages\\
+  \textasciitilde{}r [MIN]-[MAX] & & messages with ``date-received'' in a Date range\\
+  \textasciitilde{}S & & superseded messages\\
+  \textasciitilde{}s SUBJECT & & messages having SUBJECT in the ``Subject'' field.\\
+  \textasciitilde{}T & & tagged messages\\
+  \textasciitilde{}t USER & & messages addressed to USER\\
+  \textasciitilde{}U & & unread messages\\
+  \textasciitilde{}v & & message is part of a collapsed thread.\\
+  \textasciitilde{}x EXPR & & messages which contain EXPR in the `References' field\\
+  \textasciitilde{}y EXPR & & messages which contain EXPR in the `X-Label' field\\
+  \textasciitilde{}z [MIN]-[MAX] & & messages with a size in the range MIN to MAX *)\\
+  \textasciitilde{}= & & duplicated messages (see \$duplicate threads)\\
+\end{tabulary}
+\end{table*}
 
 \begin{table*}[!b]
 % increase table row spacing, adjust to taste
@@ -83,6 +142,7 @@ me may not work for you.
   k & j & move to previous line (move to next line)\\
   gg & G & move to first line (move to last line)\\
   ctrl-u & & call urlview to open links\\
+  T & & hide quoted material\\
 \end{tabulary}
 \end{table*}
 
